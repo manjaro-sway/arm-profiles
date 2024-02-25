@@ -94,7 +94,6 @@ web-installer-url-handler
 apparmor
 xdg-user-dirs
 manjaro-settings-manager
-manjaro-settings-manager-notifier
 poweralertd
 laptop-mode-tools
 
