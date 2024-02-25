@@ -1,1 +1,0 @@
-fif.plugin.zsh
