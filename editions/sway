@@ -1,179 +1,125 @@
-## Maintained by Appelgriebsch ##
+# Manjaro Sway
 
-# Sound, video and bluetooth
-pavucontrol
-alsa-utils
+## Base
+
+manjaro-sway/manjaro-sway-settings
+
+## Sway Extras
+
+sway-services
+>extra flashfocus # nicer flashing on focus change
+swaylock-effects # swaylock with nicer effects
+>extra wlsunset # time & place based light temperature
+>extra autotiling # automated tiling
+>extra sworkstyle # dynamic workspace icons in waybar
+>extra swaycwd # determines the cwd of a sway container
+>extra zeit # command line time tracker
+
+## Wayland support
+
+xorg-xwayland # xorg-wayland bridge
+>extra wlay # graphical display management like arandr
+qt5-wayland
+qt6-wayland
+gnome-keyring # unlock keyring on login
+polkit-gnome # polkit for visual superuser access
+>extra xdg-desktop-portal-wlr
+manjaro-pipewire
+
+## Btrfs
+
+grub-btrfs
+>extra timeshift-autosnap-manjaro
+
+## Greeter
+
+greetd
+greetd-tuigreet
+
+## Browser
+
+firefox
+manjaro-browser-settings
+
+## Themes
+
+qt5ct
+qt6ct
+kvantum
+gtk3-nocsd
+
+## File systems access
+
+pcmanfm-gtk3
+gvfs
+>extra gvfs-mtp
+>extra file-roller
+>extra p7zip
+
+## Sound, video and bluetooth
+
+pulsemixer
 bluez
 bluez-utils
-blueman
-wireplumber
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-pipewire-zeroconf
-pulsemixer
-gst-libav
-gst-plugin-pipewire
-libva-v4l2-request
+playerctl
 
-# Display Manager
-greetd
-greetd-gtkgreet
-wlogout
+## Network
 
-# Network
 avahi
+nss-mdns
 networkmanager
-networkmanager-openvpn
-nm-connection-editor
+>extra network-manager-applet
 dhclient
-manjaro-hotfixes
-manjaro-settings-samba
 
-# Core Sway
-sway
-swaybg
-swayidle
-swaylock
-mako
-foot
-fuzzel
-waybar
-wl-clipboard
+## Multimedia
 
-# Sway Extras
-dex
-grim
-grimshot
-slurp
-wdisplays
-wf-recorder
+>extra mplayer # multimedia player
+>extra ffmpeg
+>extra ffmpegthumbnailer
+>extra zathura
+>extra zathura-pdf-poppler
+>extra gnome-epub-thumbnailer
+>extra imv
 
-# Themes
-adw-gtk3
-qt5ct
-qt5-wayland
-kvantum
-kvantum-theme-matchama
-matcha-gtk-theme
-manjaro-arm-wallpapers
-papirus-maia-icon-theme
-xcursor-breeze
+## Package Management
 
-# Web Browser
-firefox
-firefox-ublock-origin
-
-# Package Manager
+>extra yay
+>extra manjaro-aur-support
 pamac-gtk
-polkit-gnome
-pamac-cli
+>extra appimagelauncher
+>extra web-installer-url-handler
 
-# Fonts
-# nerd-fonts-terminus # Replaced with ttf-terminus-nerd
-ttf-terminus-nerd
-noto-fonts
-noto-fonts-emoji
-ttf-bitstream-vera
-ttf-droid
-ttf-inconsolata
-ttf-font-awesome
-ttf-roboto
-wqy-microhei #chinese
+## Utils
 
-# some interesting CLI tools
-bash-completion
-bat
-btop
-box64
-chafa
-cmatrix
-cpu-temp-speed
-curl
-dua-cli
-exa
-fd
-firewalld
-ffmpegthumbnailer
-fzf
-#gitui
-gpg-tui
-helix
-hey
-hexyl
-httpie
-hyperfine
-jq
-khard
-khal
-brightnessctl
-mdcat
-mediainfo
-mlocate
-neofetch
-odt2txt
-onefetch
-ranger
-ripgrep
-rsync
-silicon
-silver
-tldr
-power-profiles-daemon
-websocat
-wget
-vdirsyncer
-xplr
-yad
-yay
-
-# Applications
-celluloid
-eog
-evince
-file-roller
-fractal
-gcolor3
-gedit
-gedit-plugins
-gnome-disk-utility
-gnome-epub-thumbnailer
-gnome-keyring
-gradience
-manjaro-settings-manager
-matray
-nautilus
-remmina
-seahorse
-simple-scan
-sushi
-system-config-printer
-
-# File systems access
-gvfs
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-ifuse
-mtpfs
-mpv
-ffmpeg
-sshfs
-usb_modeswitch
-
-# for qemu support
-# phodav
-# spice-vdagent
-
-# Optional dependencies file-roller
-p7zip  # 7Z and ARJ archive support
-unrar  # RAR archive support
-
-## Xorg Server and Graphics
+>extra apparmor
 xdg-user-dirs
-xorg-xwayland
+>extra manjaro-settings-manager
+>extra manjaro-settings-manager-notifier
+>extra poweralertd
+>extra laptop-mode-tools
 
-## Desktop Utils
-xdg-utils
-xdg-desktop-portal-wlr
+## lmt dependencies
+
+>extra python-pyqt5
+>extra ethtool
+
+## Extra fonts
+
+>extra wqy-microhei
+
+## CLI tools
+
+curl
+jq
+>extra oh-my-zsh
+wget
+wl-clipboard # wayland clipboard application
+cliphist # clipboard history application
+>extra wluma # adaptive brightness
+>extra dex # starting .desktop files from the cli
+>extra pacseek # lightweight tui package manager
+
+## Misc
+
+manjaro-hotfixes
+>basic squashfs-tools
