@@ -121,4 +121,4 @@ pacseek # lightweight tui package manager
 ## Misc
 
 manjaro-hotfixes
->basic squashfs-tools
+squashfs-tools
