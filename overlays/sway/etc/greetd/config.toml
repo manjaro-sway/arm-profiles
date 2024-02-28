@@ -5,3 +5,6 @@ vt = "next"
 command = "tuigreet --user-menu --user-menu-min-uid 1000 --remember --remember-user-session --time --issue --asterisks"
 user = "greeter"
 
+[initial_session]
+command = "sway-user-service"
+user = "oem"
