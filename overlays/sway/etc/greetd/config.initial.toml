@@ -1,0 +1,6 @@
+[terminal]
+vt = "next"
+
+[initial_session]
+command = "sway-user-service"
+user = "oem"
