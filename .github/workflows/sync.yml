@@ -1,0 +1,37 @@
+name: sync
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 */2 * * *'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+        steps:
+            - uses: actions/checkout@v4
+            - name: setup
+              run: |
+                git config user.email "sync@manjaro-sway.download"
+                git config user.name "Sync Bot"
+                echo ${{ github.token }} | gh auth login --with-token
+                git checkout -b upstream_main
+                git reset --hard origin/main
+            - name: Sync
+              run: |
+                curl -s https://raw.githubusercontent.com/manjaro-sway/iso-profiles/sway/community/sway/Packages-Desktop >editions/sway
+            - name: Commit
+              run: |
+                git status
+                git add editions/sway
+        
+                if [ -n "$(git status --porcelain)" ]; then
+                    git commit -m "chore(sync): Sync with x86 profile"
+                    git push --force --set-upstream origin upstream_main
+                fi
+            - name: Create PR
+              run: |
+                gh pr create --fill || exit 0
+         
