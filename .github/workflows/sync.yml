@@ -21,7 +21,7 @@ jobs:
                 git reset --hard origin/main
             - name: Sync
               run: |
-                curl -s https://raw.githubusercontent.com/manjaro-sway/iso-profiles/sway/community/sway/Packages-Desktop >editions/sway
+                curl -s https://raw.githubusercontent.com/manjaro-sway/iso-profiles/sway/community/sway/Packages-Desktop | sed -E "s/^>(extra|basic) //" >editions/sway
             - name: Commit
               run: |
                 git status
