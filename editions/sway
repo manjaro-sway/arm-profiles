@@ -73,7 +73,7 @@ dhclient
 
 ## Multimedia
 
-mplayer # multimedia player
+celluloid # multimedia player
 ffmpeg
 ffmpegthumbnailer
 zathura
@@ -117,6 +117,7 @@ cliphist # clipboard history application
 wluma # adaptive brightness
 dex # starting .desktop files from the cli
 pacseek # lightweight tui package manager
+helix # vim-like editor
 
 ## Misc
 
