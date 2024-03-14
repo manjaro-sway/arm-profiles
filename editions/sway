@@ -123,3 +123,5 @@ helix # vim-like editor
 
 manjaro-hotfixes
 squashfs-tools
+bootsplash-theme-manjaro
+bootsplash-systemd
