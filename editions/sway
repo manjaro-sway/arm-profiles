@@ -84,6 +84,7 @@ imv
 ## Package Management
 
 yay
+base-devel
 manjaro-aur-support
 pamac-gtk
 appimagelauncher
@@ -121,5 +122,5 @@ helix # vim-like editor
 
 ## Misc
 
-manjaro-hotfixes
+manjaro-pacnew-checker
 squashfs-tools
