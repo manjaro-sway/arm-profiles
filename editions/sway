@@ -88,8 +88,6 @@ base-devel
 manjaro-aur-support
 pamac-gtk
 appimagelauncher
-web-installer-url-handler
-
 ## Utils
 
 apparmor
