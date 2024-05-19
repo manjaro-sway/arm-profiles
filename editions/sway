@@ -88,6 +88,7 @@ base-devel
 manjaro-aur-support
 pamac-gtk
 appimagelauncher
+
 ## Utils
 
 apparmor
@@ -117,6 +118,7 @@ wluma # adaptive brightness
 dex # starting .desktop files from the cli
 pacseek # lightweight tui package manager
 helix # vim-like editor
+pacman-log-orphans-hook # pacman hook to log orphaned packages
 
 ## Misc
 
