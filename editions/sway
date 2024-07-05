@@ -13,7 +13,6 @@ wlsunset # time & place based light temperature
 autotiling # automated tiling
 sworkstyle # dynamic workspace icons in waybar
 swaycwd # determines the cwd of a sway container
-zeit # command line time tracker
 
 ## Wayland support
 
