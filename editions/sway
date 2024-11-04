@@ -49,7 +49,7 @@ gtk3-nocsd
 
 ## File systems access
 
-pcmanfm-gtk3
+pcmanfm-qt
 gvfs
 gvfs-mtp
 file-roller
