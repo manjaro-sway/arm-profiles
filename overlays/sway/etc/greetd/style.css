@@ -1,6 +1,3 @@
-/* import css definitions for current theme */
-@import url("/tmp/gtkgreet/theme.css");
-
 * {
     background-image: none;
 }
