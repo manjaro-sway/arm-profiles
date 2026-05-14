@@ -8,7 +8,9 @@ manjaro-sway/manjaro-sway-settings
 
 sway-services
 flashfocus # nicer flashing on focus change
+gtklock # lockscreen that sticks to the gtk theme
 wlsunset # time & place based light temperature
+autotiling # automated tiling
 sworkstyle # dynamic workspace icons in waybar
 swaycwd # determines the cwd of a sway container
 
